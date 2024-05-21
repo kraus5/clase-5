@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tarea 3</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>    
+</head>
+<body>
+    <header></header>
+    <main>
+        <form id="formulario">
+            <h1>Calcular duración total del curso r/ArgentinaPrograma.</h1>
+
+            <p>Listado de videos:<br>
+                -Clase 1: 2 horas 34 minutos 43 segundos.<br>
+                -Clase 2: 1 hora 48 minutos 24 segundos.<br>
+                -Clase 3: 47 minutos 26 segundos.<br>
+                -Clase 4: 2 horas 18 minutos 45 segundos.<br>
+                -Clase 5: 2 horas 40 minutos 48 segundos.<br>
+                -Clase 6: 1 hora 14 minutos 28 segundos.<br>
+                -Clase 7: 1 hora 30 minutos 40 segundos.<br>
+                -Clase 8: 2 horas 4 minutos 55 segundos.<br>
+                -Clase 9: 43 minutos 5 segundos.<br>
+                -Clase 10: 1 hora 35 minutos 28 segundos.<br>
+                -Clase 11: 1 hora 44 minutos 18 segundos.<br>
+                -Clase 12: 2 horas 11 minutos 32 segundos.<br>
+                -Clase 13: 1 hora 52 minutos 22 segundos.<br>
+                -Clase 14: 2 horas 4 minutos 41 segundos.<br>
+                -Clase 15: 2 horas 4 minutos 17 segundos.<br>
+                -Clase 16: 1 hora 42 minutos 15 segundos.<br>
+                -Clase 17: 1 hora 49 minutos 19 segundos.<br>
+                -Clase 18 parte 1: 50 minutos 4 segundos.<br>
+                -Clase 18 parte 2: 1 hora 35 minutos 12 segundos.<br>
+                -Clase 18 parte 3: 1 hora 5 minutos 44 segundos.<br>
+                -Clase 18 parte 4: 1 hora 14 minutos 19 segundos.<br>
+                -Clase 18 parte 5: 2 horas 7 minutos 14 segundos.<br>
+                -Clase 19 parte 1: 1 hora 22 minutos 10 segundos.<br>
+                -Clase 19 parte 2: 1 hora 19 minutos 8 segundos.<br>
+                -Clase 19 parte 3: 1 hora 7 minutos 19 segundos.
+            </p>
+
+            <p>A continuación agregaremos la duración de cada video:</p>
+
+            <label for="horas">Horas:</label>
+            <input type="number" id="horas" max="10">
+
+            <label for="minutos">Minutos:</label>
+            <input type="number" id="minutos" max="59">
+
+            <label for="segundos">Segundos:</label>
+            <input type="number" id="segundos" max="59">
+
+            <button type="button" id="agregar-video">Agregar video</button>
+            <button type="button" id="calcular-duracion">Calcular</button>
+
+            <h3><strong id="resultado"></strong></h3>
+        </form>
+    </main>
+    <footer></footer>
+    <script src='tarea-3.js'></script>    
+</body>
+</html>
