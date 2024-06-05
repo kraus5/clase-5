@@ -8,14 +8,14 @@
 const $botonEnviar = document.querySelector("#botonEnviar");
 
 $botonEnviar.onclick = function () {
-    let $nombreUsuario = document.querySelector("#nombreUsuario").value;
-    let $segundoNombreUsuario = document.querySelector("#segundoNombreUsuario").value;
-    let $apellidosUsuario = document.querySelector("#apellidosUsuario").value;
-    let $edadUsuario = document.querySelector("#edadUsuario").value;
+    let nombreUsuario = document.querySelector("#nombreUsuario").value;
+    let segundoNombreUsuario = document.querySelector("#segundoNombreUsuario").value;
+    let apellidosUsuario = document.querySelector("#apellidosUsuario").value;
+    let edadUsuario = document.querySelector("#edadUsuario").value;
 
-    let informacion = `${$nombreUsuario} ${$segundoNombreUsuario} ${$apellidosUsuario} ${$edadUsuario}`
+    let informacion = `${nombreUsuario} ${segundoNombreUsuario} ${apellidosUsuario} ${edadUsuario}`
     document.querySelector("#informacion").value = informacion
-    document.querySelector("h1").innerText = `Bienvenido/a ${$nombreUsuario}`
+    document.querySelector("h1").innerText = `Bienvenido/a ${nombreUsuario}`
 
     return false;
 }
