@@ -3,10 +3,10 @@
 // en una caja de texto deshabilitada. --> <input type="text" disabled id="salario-mensual"/>
 
 const $botonResultado = document.querySelector("#botonResultado");
-let textoResultado;
 
 $botonResultado.onclick = function(){
-  let $salarioAnual = Number(document.querySelector("#salarioAnual").value)
-  textoResultado = $salarioAnual / 12;
+  let textoResultado;
+  let salarioAnual = Number(document.querySelector("#salarioAnual").value)
+  textoResultado = salarioAnual / 12;
   document.querySelector("#salarioMensual").value = textoResultado
 }
