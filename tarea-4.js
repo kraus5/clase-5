@@ -8,66 +8,66 @@
 
 const $botonCalcular = document.querySelector("#calcular");
 
-let listaDeNumeros = [5, 9, 5, 22, 28, 22, 31, 5, 34, 35]
+let numeros = [5, 9, 5, 22, 28, 22, 31, 5, 34, 35]
 
-function calcularPromedio(listaDeNumeros) {
+function calcularPromedio(numeros) {
 
     let numero = 0;
-    for (let i = 0; i < listaDeNumeros.length; i++) {
+    for (let i = 0; i < numeros.length; i++) {
 
-        numero = numero + listaDeNumeros[i]
+        numero = numero + numeros[i]
     }
 
-    return numero / listaDeNumeros.length;
+    return numero / numeros.length;
 }
 
-let resultadoPromedio = calcularPromedio(listaDeNumeros);
+let resultadoPromedio = calcularPromedio(numeros);
 
-function numeroMasPequeño(listaDeNumeros) {
+function calcularNumeroMasPequeño(numeros) {
 
-    let numeroMinimo = listaDeNumeros[0]
-    for (let i = 1; i < listaDeNumeros.length; i++) {
+    let numeroMinimo = numeros[0]
+    for (let i = 1; i < numeros.length; i++) {
 
-        if (listaDeNumeros[i] < numeroMinimo) {
+        if (numeros[i] < numeroMinimo) {
 
-            numeroMinimo = listaDeNumeros[i]
+            numeroMinimo = numeros[i]
         }
     }
 
     return numeroMinimo;
 }
 
-let numeroMinimo = numeroMasPequeño(listaDeNumeros);
+let numeroMinimo = calcularNumeroMasPequeño(numeros);
 
-function numeroMasGrande(listaDeNumeros) {
+function calcularNumeroMasGrande(numeros) {
 
-    let numeroMaximo = listaDeNumeros[0]
-    for (let i = 1; i < listaDeNumeros.length; i++) {
+    let numeroMaximo = numeros[0]
+    for (let i = 1; i < numeros.length; i++) {
 
-        if (listaDeNumeros[i] > numeroMaximo) {
+        if (numeros[i] > numeroMaximo) {
 
-            numeroMaximo = listaDeNumeros[i]
+            numeroMaximo = numeros[i]
         }
     }
 
     return numeroMaximo;
 }
 
-let numeroMaximo = numeroMasGrande(listaDeNumeros);
+let numeroMaximo = calcularNumeroMasGrande(numeros);
 
-function numeroMasRepetido(listaDeNumeros) {
+function calcularNumeroMasRepetido(numeros) {
 
     let numeroMasRepetido;
     let masRepetido = 0;
 
-    for (let i = 0; i < listaDeNumeros.length; i++) {
+    for (let i = 0; i < numeros.length; i++) {
 
-        let numero = listaDeNumeros[i]
+        let numero = numeros[i]
         let repetido = 0;
 
-        for (let x = 0; x < listaDeNumeros.length; x++) {
+        for (let x = 0; x < numeros.length; x++) {
 
-            if(listaDeNumeros[x] === numero) {
+            if(numeros[x] === numero) {
 
                 repetido ++
             }
@@ -83,7 +83,7 @@ function numeroMasRepetido(listaDeNumeros) {
     return numeroMasRepetido;
 }
 
-let numeroMasVecesRepetido = numeroMasRepetido(listaDeNumeros);
+let numeroMasVecesRepetido = calcularNumeroMasRepetido(numeros);
 
 let mensaje; 
 $botonCalcular.onclick = function () {
